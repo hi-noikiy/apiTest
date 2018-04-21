@@ -1,0 +1,37 @@
+testinfo:
+    module: homepage
+    intr: homepage APIs
+
+Check:
+    c: 0
+    m: success
+    ok: true
+homePage:
+  - id: h0001
+    casename: 热门品牌hotBrandContainers
+    api: home/hotBrandContainers
+    data:
+  - id: h0002
+    casename: 精选主题themes
+    api: /home/themes
+    data:
+  - id: h0003
+    articles:
+    casename: 首页文章articles
+    api: home/column/articles
+    data:
+  - id: h0004
+    casename: 设计达人recommendUsers
+    api: home/recommendUsers
+    data:
+  - id: h0005
+    casename: 热门商店hotBrandUsers
+    api: /home/hotBrandUsers
+    data:
+  - id: h0006
+    casename: 首页拼图waterfallBoards
+    api: home/boards?offset=0&limit=70
+    data:
+      offset: 0
+      limit: 70
+

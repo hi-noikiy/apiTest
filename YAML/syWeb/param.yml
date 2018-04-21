@@ -1,0 +1,6 @@
+/sy/item/deleteUpdateRecord
+  - brandContainerId: 12121
+    p: 1
+    l: 10
+  - brandContainerId: 111
+  - brandContainerId: 123

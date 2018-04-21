@@ -1,0 +1,72 @@
+testinfo:
+    module: search
+    intr: search relative api
+
+searchAPI:
+  - id: s0001
+    casename: itemSearchNavigation
+    api: search/itemSearchNavigation
+    data:
+    check:
+  - id: s0002
+    casename: brandSearchNavigation
+    api: search/brandSearchNavigation
+    data:
+  - id: s0003
+    casename: boardSearchNavigation
+    api: search/boardSearchNavigation
+    data:
+  - id: s0004
+    casename: userSearchNavigation
+    api: search/userSearchNavigation
+    data:
+  - id: s0005
+    casename: associate
+    api: search/associate
+    data:
+  - id: s0006
+    casename: searchBrands
+    api: search/brands
+    data:
+      key: e
+  - id: s0007
+    casename: searchItems
+    api: search/items
+    data:
+      key: safa
+  - id: s0008
+    casename: searchBoards
+    api: search/boards
+    data:
+      key: 餐厅
+  - id: s0009
+    casename: searchUsers
+    api: search/users
+    data:
+      key: lily
+  - id: s0010
+    casename: userItems
+    api: search/userItems
+    data:
+      p: 1
+      l: 18
+  - id: s0011
+    casename: brand_items
+    api: search/brand_items
+    data:
+      brandContainerId: 58a54f73e4b01513b923560c
+      offset: 0
+      limit: 36
+
+Check:
+    c: 0
+    m: success
+    ok: true
+
+
+
+
+
+
+
+

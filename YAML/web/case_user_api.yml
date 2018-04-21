@@ -1,0 +1,126 @@
+testinfo:
+    module: userAPI
+    intr: user me something
+Check:
+    c: 0
+    m: success
+    ok: true
+userAPI:
+  - id: u0001
+    casename: userinfo
+    api: user/info
+    data:
+      id: 580afeb9e4b09c32411a1b25
+
+  - id: u0002
+    casename: 修改我的信息me/updateinfo
+    api: me/updateinfo
+    data:
+      nickname: 昵称
+      profileImg:
+      desc:
+      sex:
+      province:
+      provinceName:
+      city:
+      cityname:
+      job:
+  - id: u0003
+    casename: 我的信息me/info
+    api: me/info
+    data:
+  - id: u0004
+    casename: 我的订单me/orders
+    api: me/orders
+    data:
+      offset: 0
+      limit: 100
+  - id: u0005
+    casename: 我的项目拼图me/projectboards
+    api: me/projectboards
+    data:
+      offset: 0
+      limit: 36
+  - id: u0006
+    casename: 我的项目/me/projectList
+    api: /me/projectList
+    data:
+      offset: 0
+      limit: 36
+      sort: createTime
+  - id: u0007
+    casename: 我的拼图me/boardList
+    api: me/boardList
+    data:
+      offset: 0
+      limit: 36
+      sort: createTime
+  - id: u0008
+    casename: 我收藏的模板 me/mycollectboards
+    api: me/mycollectboards
+    data:
+      offset: 0
+      pageSize: 30
+  - id: u0009
+    casename: 我的合集me/folders
+    api: me/folders
+    data:
+  - id: u0010
+    casename: userprojectbaords
+    api: user/projectboards
+    data:
+      offset: 0
+      limit: 36
+      userId: 580afeb9e4b09c32411a1b25
+  - id: u0011
+    casename: 主页单品user/items
+    api: user/items
+    data:
+      id: 580afeb9e4b09c32411a1b25
+      offset: 0
+      limit: 18
+  - id: u0012
+    casename: 主页粉丝follow/userfollows
+    api: follow/userfollows
+    data:
+      id: 580afeb9e4b09c32411a1b25
+      offset: 0
+      limit: 18
+  - id: u0013
+    casename: 主页粉丝follow/userfans
+    api: follow/userfans
+    data:
+      id: 580afeb9e4b09c32411a1b25
+      offset: 0
+      limit: 18
+
+  - id: u0014
+    casename: 供应商主页单品user/supplier/onSaleItems
+    api: user/supplier/onSaleItems
+    data:
+      userId: 5899692be4b01513b9230a5a
+      offset: 0
+      limit: 18
+
+  - id: u0015
+    casename: 品牌主页相关拼图brandContainer/boards
+    api: brand/brandContainer/boards
+    data:
+      brandContainerId: 5883244ce4b0e3a7d4638876
+      offset: 0
+      limit: 18
+  - id: u0016
+    casename: 品牌商店supplier/getBrandRelSupplierUsers
+    api: supplier/getBrandRelSupplierUsers
+    data:
+      brandId: 5883244ce4b0e3a7d4638876
+      offset: 0
+      limit: 18
+  - id: u0017
+    casename: 品牌主页单品brand_items
+    api: search/brand_items
+    data:
+      brandContainerId: 5883244ce4b0e3a7d4638876
+      offset: 0
+      limit: 18
+
